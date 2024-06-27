@@ -20,7 +20,7 @@ namespace GameCore
         { 
             //PlayerPrefs.DeleteAll();
             base.Awake();
-            _moneyManager.Init(0);
+            _moneyManager.Init(50000);
             _uiNavigation.Init();
             _timer.Init();
             _fxController.Init();

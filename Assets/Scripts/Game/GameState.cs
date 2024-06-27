@@ -107,12 +107,14 @@ namespace Game
         
         public void AcceptMan()
         {
+            GameInstance.FXController.PlayHitParticle();
             _gameAnimator.SetTrigger("OutMan");
             StartCoroutine(SendNextMan());
         }
         
         public void RejectMan()
         {
+            GameInstance.FXController.PlayMissParticle();
             _gameAnimator.SetTrigger("OutMan");
             StartCoroutine(SendNextManReject());
         }

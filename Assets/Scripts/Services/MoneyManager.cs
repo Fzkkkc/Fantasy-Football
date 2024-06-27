@@ -19,7 +19,7 @@ namespace GameCore
             //PlayerPrefs.DeleteKey("PREFS_Money");
             _coins = PrefsMoney;
             //if (GetCoinsCurrency() <= 0UL)
-            //AddCoinsCurrency(startMoney);
+            AddCoinsCurrency(startMoney);
         }
         
         public ulong GetCoinsCurrency()

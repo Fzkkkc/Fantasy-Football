@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PeopleAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 3df4d9d284293434b8f72bb2b9555ab8, type: 3}
+    - {fileID: 2800000, guid: 16ad2e970227c6041a2356bae73819a4, type: 3}
+    - {fileID: 2800000, guid: 79f615180645123449107854877fa081, type: 3}
+    - {fileID: 2800000, guid: 9b3c38e2b63cf7b41b901a70291ffeb8, type: 3}
+    - {fileID: 2800000, guid: fc120dd8f83f2024f98e1c7d2be833d8, type: 3}
+    - {fileID: 2800000, guid: aeb3eddd086fa4640b0ff1d15b8fc853, type: 3}
+    - {fileID: 2800000, guid: 9fc585a882c437d4ca4e1256eefeb56a, type: 3}
+    - {fileID: 2800000, guid: 3d5ac4a4e26570347806168d3bcc24db, type: 3}
+    - {fileID: 2800000, guid: 38a4ee2dca8b231429df795621d42dee, type: 3}
+    - {fileID: 2800000, guid: 3b207e06185c0f24ea013ed93c3ce2d5, type: 3}
+    - {fileID: 2800000, guid: ab8c146ce77e1d0449d85f89f31dcefa, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 3df4d9d284293434b8f72bb2b9555ab8: 21300000
+    - 9b3c38e2b63cf7b41b901a70291ffeb8: 21300000
+    - 3d5ac4a4e26570347806168d3bcc24db: 21300000
+    - 3b207e06185c0f24ea013ed93c3ce2d5: 21300000
+    - 16ad2e970227c6041a2356bae73819a4: 21300000
+    - 79f615180645123449107854877fa081: 21300000
+    - 9fc585a882c437d4ca4e1256eefeb56a: 21300000
+    - fc120dd8f83f2024f98e1c7d2be833d8: 21300000
+    - ab8c146ce77e1d0449d85f89f31dcefa: 21300000
+    - 38a4ee2dca8b231429df795621d42dee: 21300000
+    - aeb3eddd086fa4640b0ff1d15b8fc853: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 3df4d9d284293434b8f72bb2b9555ab8, type: 3}
+  - {fileID: 21300000, guid: 9b3c38e2b63cf7b41b901a70291ffeb8, type: 3}
+  - {fileID: 21300000, guid: 3d5ac4a4e26570347806168d3bcc24db, type: 3}
+  - {fileID: 21300000, guid: 3b207e06185c0f24ea013ed93c3ce2d5, type: 3}
+  - {fileID: 21300000, guid: 16ad2e970227c6041a2356bae73819a4, type: 3}
+  - {fileID: 21300000, guid: 79f615180645123449107854877fa081, type: 3}
+  - {fileID: 21300000, guid: 9fc585a882c437d4ca4e1256eefeb56a, type: 3}
+  - {fileID: 21300000, guid: fc120dd8f83f2024f98e1c7d2be833d8, type: 3}
+  - {fileID: 21300000, guid: ab8c146ce77e1d0449d85f89f31dcefa, type: 3}
+  - {fileID: 21300000, guid: 38a4ee2dca8b231429df795621d42dee, type: 3}
+  - {fileID: 21300000, guid: aeb3eddd086fa4640b0ff1d15b8fc853, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - "\u0427\u0435\u043B\u043E\u0432\u0435\u043A 1"
+  - "\u0427\u0435\u043B\u043E\u0432\u0435\u043A 4"
+  - "\u0427\u0435\u043B\u043E\u0432\u0435\u043A 8"
+  - "\u0427\u0435\u043B\u043E\u0432\u0435\u043A 10"
+  - "\u0427\u0435\u043B\u043E\u0432\u0435\u043A 2"
+  - "\u0427\u0435\u043B\u043E\u0432\u0435\u043A 3"
+  - "\u0427\u0435\u043B\u043E\u0432\u0435\u043A 7"
+  - "\u0427\u0435\u043B\u043E\u0432\u0435\u043A 5"
+  - "\u0427\u0435\u043B\u043E\u0432\u0435\u043A 11"
+  - "\u0427\u0435\u043B\u043E\u0432\u0435\u043A 9"
+  - "\u0427\u0435\u043B\u043E\u0432\u0435\u043A 6"
+  m_RenderDataMap: {}
+  m_Tag: PeopleAtlas
+  m_IsVariant: 0

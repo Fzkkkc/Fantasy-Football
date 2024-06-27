@@ -7,6 +7,8 @@ namespace GameCore
     {
         [SerializeField] private ParticleSystem _moneyShowerFX;
         [SerializeField] private ParticleSystem _starShowerFX;
+        [SerializeField] private ParticleSystem _hitFX;
+        [SerializeField] private ParticleSystem _missFX;
 
         [SerializeField] private List<ParticleSystem> _particleSystems;
         
@@ -20,6 +22,18 @@ namespace GameCore
         {
             _starShowerFX.gameObject.SetActive(true);
             _starShowerFX.Play();
+        }
+        
+        public void PlayMissParticle()
+        {
+            _missFX.gameObject.SetActive(true);
+            _missFX.Play();
+        }
+        
+        public void PlayHitParticle()
+        {
+            _hitFX.gameObject.SetActive(true);
+            _hitFX.Play();
         }
 
         private void DisableParticles()

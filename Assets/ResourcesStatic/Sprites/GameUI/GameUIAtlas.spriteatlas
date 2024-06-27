@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GameUIAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: d863f5a55c9803945b061dacf591ab49, type: 3}
+    - {fileID: 2800000, guid: ccdcd1853b3337d498dacfe7e4851f56, type: 3}
+    - {fileID: 2800000, guid: 09f30fa6bc4db7a4c9ae3ae6b82a9518, type: 3}
+    - {fileID: 2800000, guid: 2c2ee7c0949d9f94e85835dc1e41d6fd, type: 3}
+    - {fileID: 2800000, guid: e74e2f00ea857c44986462a2b7256a7b, type: 3}
+    - {fileID: 2800000, guid: 5d1e477efb92da54484cc6c9dbbfedbd, type: 3}
+    - {fileID: 2800000, guid: aff7fe73754a66440b0d716a1dfea42c, type: 3}
+    - {fileID: 2800000, guid: 23a0175a44ca3864f8ecb77158ce6a92, type: 3}
+    - {fileID: 2800000, guid: 6373b1146a4a2e64ab21b033c22e580a, type: 3}
+    - {fileID: 2800000, guid: dbf123535eaf74b4cb64b7427b225cf6, type: 3}
+    - {fileID: 2800000, guid: 354a145878860d44ca3fe66e2f0bcd10, type: 3}
+    - {fileID: 2800000, guid: 432dbc59a3253ed46b2f811ab4e413f2, type: 3}
+    - {fileID: 2800000, guid: f3772d1104aa63a4b89ac84202f6192f, type: 3}
+    - {fileID: 2800000, guid: adc57a11c1c0ead4d80c0af77898b3e6, type: 3}
+    - {fileID: 2800000, guid: 5aa254ae07c19a947b61233eadd864cb, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - e74e2f00ea857c44986462a2b7256a7b: 21300000
+    - 2c2ee7c0949d9f94e85835dc1e41d6fd: 21300000
+    - adc57a11c1c0ead4d80c0af77898b3e6: 21300000
+    - f3772d1104aa63a4b89ac84202f6192f: 21300000
+    - dbf123535eaf74b4cb64b7427b225cf6: 21300000
+    - aff7fe73754a66440b0d716a1dfea42c: 21300000
+    - 6373b1146a4a2e64ab21b033c22e580a: 21300000
+    - ccdcd1853b3337d498dacfe7e4851f56: 21300000
+    - d863f5a55c9803945b061dacf591ab49: 21300000
+    - 09f30fa6bc4db7a4c9ae3ae6b82a9518: 21300000
+    - 354a145878860d44ca3fe66e2f0bcd10: 21300000
+    - 432dbc59a3253ed46b2f811ab4e413f2: 21300000
+    - 23a0175a44ca3864f8ecb77158ce6a92: 21300000
+    - 5d1e477efb92da54484cc6c9dbbfedbd: 21300000
+    - 5aa254ae07c19a947b61233eadd864cb: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: e74e2f00ea857c44986462a2b7256a7b, type: 3}
+  - {fileID: 21300000, guid: 2c2ee7c0949d9f94e85835dc1e41d6fd, type: 3}
+  - {fileID: 21300000, guid: adc57a11c1c0ead4d80c0af77898b3e6, type: 3}
+  - {fileID: 21300000, guid: f3772d1104aa63a4b89ac84202f6192f, type: 3}
+  - {fileID: 21300000, guid: dbf123535eaf74b4cb64b7427b225cf6, type: 3}
+  - {fileID: 21300000, guid: aff7fe73754a66440b0d716a1dfea42c, type: 3}
+  - {fileID: 21300000, guid: 6373b1146a4a2e64ab21b033c22e580a, type: 3}
+  - {fileID: 21300000, guid: ccdcd1853b3337d498dacfe7e4851f56, type: 3}
+  - {fileID: 21300000, guid: d863f5a55c9803945b061dacf591ab49, type: 3}
+  - {fileID: 21300000, guid: 09f30fa6bc4db7a4c9ae3ae6b82a9518, type: 3}
+  - {fileID: 21300000, guid: 354a145878860d44ca3fe66e2f0bcd10, type: 3}
+  - {fileID: 21300000, guid: 432dbc59a3253ed46b2f811ab4e413f2, type: 3}
+  - {fileID: 21300000, guid: 23a0175a44ca3864f8ecb77158ce6a92, type: 3}
+  - {fileID: 21300000, guid: 5d1e477efb92da54484cc6c9dbbfedbd, type: 3}
+  - {fileID: 21300000, guid: 5aa254ae07c19a947b61233eadd864cb, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Frame 1597880652
+  - Frame 1597880651
+  - "\u0421\u0442\u0435\u043A\u043B\u043E"
+  - "\u041F\u0430\u0441\u043F\u043E\u0440\u0442"
+  - OK
+  - Group 1 (1)
+  - NO
+  - Frame 16
+  - cursor-pointinghand
+  - Frame 19
+  - "\u0411\u0413"
+  - "\u041C\u043E\u043D\u0438\u0442\u043E\u0440"
+  - Group 2
+  - Frame 1597880653
+  - "\u0447\u0430\u0441\u044B"
+  m_RenderDataMap: {}
+  m_Tag: GameUIAtlas
+  m_IsVariant: 0

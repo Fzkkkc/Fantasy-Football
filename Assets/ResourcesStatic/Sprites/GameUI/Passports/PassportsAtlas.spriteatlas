@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PassportsAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 2bb06373286dd5b4f9b9d522fe3dc923, type: 3}
+    - {fileID: 2800000, guid: 862e792e51b58684cb231927175cd821, type: 3}
+    - {fileID: 2800000, guid: 4c8637950a3580a4c8d44a083d1a29fb, type: 3}
+    - {fileID: 2800000, guid: eb038089a61e9e0498b82fe65f79803e, type: 3}
+    - {fileID: 2800000, guid: 46621404fc6868348859640bb07047c7, type: 3}
+    - {fileID: 2800000, guid: d8fd840e3063acd40baf676286a27339, type: 3}
+    - {fileID: 2800000, guid: f78510b0c86bd7b41a502fec64f8f4ff, type: 3}
+    - {fileID: 2800000, guid: 9898103fa4878384a867ae67e4f02d58, type: 3}
+    - {fileID: 2800000, guid: 2dd0aaba70403c54589939afd2942498, type: 3}
+    - {fileID: 2800000, guid: 2df7246392b09074ba3c0b69b911d2f7, type: 3}
+    - {fileID: 2800000, guid: b115b8c67a2b0d9448b21eea178f34e9, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - f78510b0c86bd7b41a502fec64f8f4ff: 21300000
+    - 2df7246392b09074ba3c0b69b911d2f7: 21300000
+    - 2bb06373286dd5b4f9b9d522fe3dc923: 21300000
+    - 46621404fc6868348859640bb07047c7: 21300000
+    - 4c8637950a3580a4c8d44a083d1a29fb: 21300000
+    - b115b8c67a2b0d9448b21eea178f34e9: 21300000
+    - eb038089a61e9e0498b82fe65f79803e: 21300000
+    - 2dd0aaba70403c54589939afd2942498: 21300000
+    - d8fd840e3063acd40baf676286a27339: 21300000
+    - 862e792e51b58684cb231927175cd821: 21300000
+    - 9898103fa4878384a867ae67e4f02d58: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: f78510b0c86bd7b41a502fec64f8f4ff, type: 3}
+  - {fileID: 21300000, guid: 2df7246392b09074ba3c0b69b911d2f7, type: 3}
+  - {fileID: 21300000, guid: 2bb06373286dd5b4f9b9d522fe3dc923, type: 3}
+  - {fileID: 21300000, guid: 46621404fc6868348859640bb07047c7, type: 3}
+  - {fileID: 21300000, guid: 4c8637950a3580a4c8d44a083d1a29fb, type: 3}
+  - {fileID: 21300000, guid: b115b8c67a2b0d9448b21eea178f34e9, type: 3}
+  - {fileID: 21300000, guid: eb038089a61e9e0498b82fe65f79803e, type: 3}
+  - {fileID: 21300000, guid: 2dd0aaba70403c54589939afd2942498, type: 3}
+  - {fileID: 21300000, guid: d8fd840e3063acd40baf676286a27339, type: 3}
+  - {fileID: 21300000, guid: 862e792e51b58684cb231927175cd821, type: 3}
+  - {fileID: 21300000, guid: 9898103fa4878384a867ae67e4f02d58, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 7pass
+  - 10pass
+  - 1pass
+  - 5pass
+  - 3pass
+  - 11pass
+  - 4pass
+  - 9pass
+  - 6pass
+  - 2pass
+  - 8pass
+  m_RenderDataMap: {}
+  m_Tag: PassportsAtlas
+  m_IsVariant: 0
