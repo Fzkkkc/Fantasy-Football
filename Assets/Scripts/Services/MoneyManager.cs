@@ -19,7 +19,7 @@ namespace GameCore
             //PlayerPrefs.DeleteKey("PREFS_Money");
             _coins = PrefsMoney;
             //if (GetCoinsCurrency() <= 0UL)
-            AddCoinsCurrency(startMoney);
+            //AddCoinsCurrency(startMoney);
         }
         
         public ulong GetCoinsCurrency()
@@ -32,6 +32,7 @@ namespace GameCore
             PrefsMoney = _coins = (_coins + count);
             OnCoinsCurrencyChange?.Invoke(_coins);
             OnCoinsCurrencyValueChange?.Invoke();
+            GameInstance.FXController.PlayMoneyParticle();
         }
         
         public void SpendCoinsCurrency(ulong count)

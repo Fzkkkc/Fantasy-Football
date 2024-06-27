@@ -109,6 +109,7 @@ namespace UserInterface
         private void OpenGameOverPopup()
         {
             SelectGamePopup(1);
+            GameInstance.FXController.PlayStarParticle();
         }
         
         public IEnumerator OpenMenuPopup(int index)

@@ -83,7 +83,7 @@ namespace Game
             _passportStatsText[1].text = $"{_currentStats[1]} years";
             for (var i = 2; i < _currentStats.Count; i++)
             {
-                _currentStats[i] = Random.Range(8, 101);
+                _currentStats[i] = Random.Range(80, 101);
                 _passportStatsText[i].text = _currentStats[i].ToString();
             }
         }
