@@ -2500,10 +2500,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 79f615180645123449107854877fa081, type: 3}
   - {fileID: 21300000, guid: 9b3c38e2b63cf7b41b901a70291ffeb8, type: 3}
   - {fileID: 21300000, guid: fc120dd8f83f2024f98e1c7d2be833d8, type: 3}
-  - {fileID: 21300000, guid: 3d5ac4a4e26570347806168d3bcc24db, type: 3}
-  - {fileID: 21300000, guid: 38a4ee2dca8b231429df795621d42dee, type: 3}
   - {fileID: 21300000, guid: aeb3eddd086fa4640b0ff1d15b8fc853, type: 3}
   - {fileID: 21300000, guid: 9fc585a882c437d4ca4e1256eefeb56a, type: 3}
+  - {fileID: 21300000, guid: 3d5ac4a4e26570347806168d3bcc24db, type: 3}
+  - {fileID: 21300000, guid: 38a4ee2dca8b231429df795621d42dee, type: 3}
   - {fileID: 21300000, guid: 3b207e06185c0f24ea013ed93c3ce2d5, type: 3}
   - {fileID: 21300000, guid: ab8c146ce77e1d0449d85f89f31dcefa, type: 3}
   _manPortraitsSprites:
@@ -2512,15 +2512,69 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4c8637950a3580a4c8d44a083d1a29fb, type: 3}
   - {fileID: 21300000, guid: eb038089a61e9e0498b82fe65f79803e, type: 3}
   - {fileID: 21300000, guid: 46621404fc6868348859640bb07047c7, type: 3}
-  - {fileID: 21300000, guid: 9898103fa4878384a867ae67e4f02d58, type: 3}
-  - {fileID: 21300000, guid: 2dd0aaba70403c54589939afd2942498, type: 3}
   - {fileID: 21300000, guid: d8fd840e3063acd40baf676286a27339, type: 3}
   - {fileID: 21300000, guid: f78510b0c86bd7b41a502fec64f8f4ff, type: 3}
+  - {fileID: 21300000, guid: 9898103fa4878384a867ae67e4f02d58, type: 3}
+  - {fileID: 21300000, guid: 2dd0aaba70403c54589939afd2942498, type: 3}
   - {fileID: 21300000, guid: 2df7246392b09074ba3c0b69b911d2f7, type: 3}
   - {fileID: 21300000, guid: b115b8c67a2b0d9448b21eea178f34e9, type: 3}
+  _passportStatsText:
+  - {fileID: 1987917437}
+  - {fileID: 421958590}
+  - {fileID: 1551167060}
+  - {fileID: 1135670813}
+  - {fileID: 1399294563}
+  - {fileID: 450619779}
   _passportPortraitImage: {fileID: 842598019}
   manImage: {fileID: 972729639}
-  _manNames: []
+  _manNames:
+  - Adam Adams
+  - Alexander Baker
+  - Benjamin Clark
+  - Daniel Davis
+  - Ethan Garcia
+  - Henry Brown
+  - Jack Mason
+  - Liam Williams
+  - Mason Adams
+  - William Clark
+  - Nicholas Baker
+  _womanNames:
+  - Abigail Adams
+  - Alice Baker
+  - Amelia Clark
+  - Anna Davis
+  - Charlotte Garcia
+  - Emily Brown
+  - Isabella Jack
+  - Lily Williams
+  - Olivia Mason
+  - Sophia Adams
+  - Grace Garcia
+  _requiredStatsText1:
+  - {fileID: 345254552}
+  - {fileID: 2121670616}
+  - {fileID: 924309197}
+  - {fileID: 67241368}
+  - {fileID: 77451966}
+  _requiredStatsText2:
+  - {fileID: 1779119530}
+  - {fileID: 1184415987}
+  - {fileID: 172807485}
+  - {fileID: 1447729893}
+  - {fileID: 1613337306}
+  _requiredStatsText3:
+  - {fileID: 1864794016}
+  - {fileID: 1671080433}
+  - {fileID: 2018963867}
+  - {fileID: 1014990011}
+  - {fileID: 828877546}
+  _requiredStatsText4:
+  - {fileID: 1679040306}
+  - {fileID: 1425747410}
+  - {fileID: 4271995}
+  - {fileID: 1931867939}
+  - {fileID: 702752666}
 --- !u!1 &383095146
 GameObject:
   m_ObjectHideFlags: 0
@@ -3522,7 +3576,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 372365781}
         m_TargetAssemblyTypeName: Game.GameState, Assembly-CSharp
-        m_MethodName: KickMan
+        m_MethodName: RejectMan
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
