@@ -10,13 +10,14 @@ namespace UserInterface
         public List<CanvasGroup> GamePopups;
         public List<CanvasGroup> MainMenuPopups;
         [SerializeField] private Animator _transitionAnimator;
-        [SerializeField] private Animator _gameAnimator;
         
         public CanvasGroup LoadingMenu;
         public CanvasGroup MainMenu;
         public CanvasGroup GameMenu;
 
         public Action OnActivePopupChanged;
+        public Action OnGameWindowOpened;
+        public Action OnGameWindowClosed;
         
         public void Init()
         {
@@ -69,7 +70,7 @@ namespace UserInterface
             StartCoroutine(OpenGamePopup());
         }
         
-        private IEnumerator OpenMenuPopup(int index)
+        public IEnumerator OpenMenuPopup(int index)
         {
             TransitionAnimation();
             yield return new WaitForSeconds(0.5f);
@@ -81,6 +82,7 @@ namespace UserInterface
             TransitionAnimation();
             yield return new WaitForSeconds(0.5f);
             OpenGroup(GameMenu);
+            OnGameWindowOpened?.Invoke();
         }
 
         public void TransitionAnimation()

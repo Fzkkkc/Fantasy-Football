@@ -82,9 +82,14 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="GameInstance.cs" t="Include" />
-          <e p="MoneyManager.cs" t="Include" />
-          <e p="Singleton.cs" t="Include" />
+          <e p="Game" t="Include">
+            <e p="GameState.cs" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="GameInstance.cs" t="Include" />
+            <e p="MoneyManager.cs" t="Include" />
+            <e p="Singleton.cs" t="Include" />
+          </e>
           <e p="UserInterface" t="Include">
             <e p="LoadingAnimation.cs" t="Include" />
             <e p="UINavigation.cs" t="Include" />
