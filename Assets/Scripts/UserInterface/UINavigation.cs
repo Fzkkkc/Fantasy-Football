@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameCore;
 using UnityEngine;
 
 namespace UserInterface
@@ -16,27 +17,32 @@ namespace UserInterface
         public CanvasGroup GameMenu;
 
         public Action OnActivePopupChanged;
-        public Action OnGameWindowOpened;
+        public Action OnGameStarted;
         public Action OnGameWindowClosed;
         
         public void Init()
         {
             ResetPopups();
+            GameInstance.Timer.OnTimerStopped += OpenGameOverPopup;
         }
 
-        private void ResetPopups()
+        private void OnDestroy()
         {
-            OpenGroup(LoadingMenu);
-            CloseGroup(GameMenu);
-            CloseGroup(MainMenu);
-            
+            GameInstance.Timer.OnTimerStopped -= OpenGameOverPopup;
+        }
+
+        private void ResetGamePopups()
+        {
             foreach (var popup in GamePopups)
             {
                 popup.alpha = 0f;
                 popup.blocksRaycasts = false;
                 popup.interactable = false;
             }
-            
+        }
+
+        private void ResetMenuPopups()
+        {
             foreach (var popup in MainMenuPopups)
             {
                 popup.alpha = 0f;
@@ -45,9 +51,27 @@ namespace UserInterface
             }
         }
         
+        private void ResetPopups()
+        {
+            OpenGroup(LoadingMenu);
+            
+            CloseGroup(GameMenu);
+            CloseGroup(MainMenu);
+            
+            ResetGamePopups();
+            ResetMenuPopups();
+        }
+        
         public void OpenMainMenu()
         {
             StartCoroutine(OpenMenuPopup(0));
+        }
+
+        public void CloseGameUI()
+        {
+            OnGameWindowClosed?.Invoke();
+            StartCoroutine(OpenMenuPopup(0));
+            ResetGamePopups();
         }
         
         public void BackToMainMenu()
@@ -69,6 +93,23 @@ namespace UserInterface
         {
             StartCoroutine(OpenGamePopup());
         }
+
+        public void OpenPausePopup()
+        {
+            SelectGamePopup(0);
+            GameInstance.Timer.StopTimer();
+        }
+        
+        public void ClosePausePopup()
+        {
+            ResetGamePopups();
+            GameInstance.Timer.ResumeTimer();
+        }
+        
+        private void OpenGameOverPopup()
+        {
+            SelectGamePopup(1);
+        }
         
         public IEnumerator OpenMenuPopup(int index)
         {
@@ -81,8 +122,9 @@ namespace UserInterface
         {
             TransitionAnimation();
             yield return new WaitForSeconds(0.5f);
+            ResetGamePopups();
             OpenGroup(GameMenu);
-            OnGameWindowOpened?.Invoke();
+            OnGameStarted?.Invoke();
         }
 
         public void TransitionAnimation()

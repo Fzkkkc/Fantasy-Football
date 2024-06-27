@@ -21,17 +21,20 @@ namespace Game
         [SerializeField] private Image _passportPortraitImage;
         [SerializeField] private Image manImage;
         
+        [SerializeField] private TextMeshProUGUI _playersReceivedText;
+        [SerializeField] private TextMeshProUGUI _moneyReceivedText;
+        
         [SerializeField] private List<string> _manNames;
         [SerializeField] private List<string> _womanNames;
 
         private bool _isExpandedStats = false;
-        
-        private List<int> _currentStats = new List<int> { 1, 2, 3, 4, 5};
-        
-        private List<int> _requiredStats1 = new List<int> { 1, 2, 3, 4, 5};
-        private List<int> _requiredStats2 = new List<int> { 1, 2, 3, 4, 5};
-        private List<int> _requiredStats3 = new List<int> { 1, 2, 3, 4, 5};
-        private List<int> _requiredStats4 = new List<int> { 1, 2, 3, 4, 5};
+
+        private List<int> _currentStats = new List<int> {1, 2, 3, 4, 5, 6};
+
+        private List<int> _requiredStats1 = new List<int> {1, 2, 3, 4, 5};
+        private List<int> _requiredStats2 = new List<int> {1, 2, 3, 4, 5};
+        private List<int> _requiredStats3 = new List<int> {1, 2, 3, 4, 5};
+        private List<int> _requiredStats4 = new List<int> {1, 2, 3, 4, 5};
 
         [SerializeField] private List<TextMeshProUGUI> _requiredStatsText1;
         [SerializeField] private List<TextMeshProUGUI> _requiredStatsText2;
@@ -40,19 +43,26 @@ namespace Game
         
         private List<List<int>> _statsList = new List<List<int>>();
         private List<List<TextMeshProUGUI>> _statsTextList = new List<List<TextMeshProUGUI>>(4);
+
+        private bool _isGoodChoice = false;
+
+        private ulong _moneyReceived = 0;
+        private int _playersReceived = 0;
         
         private void Start()
         {
-            GameInstance.UINavigation.OnGameWindowOpened += SelectNextMan;
+            GameInstance.UINavigation.OnGameStarted += SelectNextMan;
             GameInstance.UINavigation.OnGameWindowClosed += ResetGame;
+            GameInstance.Timer.OnTimerStopped += SetRequiredStats;
             AddListComponents();
             SetRequiredStats();
         }
         
         private void OnDestroy()
         {
-            GameInstance.UINavigation.OnGameWindowOpened -= SelectNextMan;
+            GameInstance.UINavigation.OnGameStarted -= SelectNextMan;
             GameInstance.UINavigation.OnGameWindowClosed -= ResetGame;
+            GameInstance.Timer.OnTimerStopped -= SetRequiredStats;
         }
 
         public void SelectNextMan()
@@ -69,11 +79,11 @@ namespace Game
 
         private void SetPassportRandomStats()
         {
-            _currentStats[1] = Random.Range(0, 10);
+            _currentStats[1] = Random.Range(0, 12);
             _passportStatsText[1].text = $"{_currentStats[1]} years";
             for (var i = 2; i < _currentStats.Count; i++)
             {
-                _currentStats[i] = Random.Range(0, 101);
+                _currentStats[i] = Random.Range(8, 101);
                 _passportStatsText[i].text = _currentStats[i].ToString();
             }
         }
@@ -94,18 +104,17 @@ namespace Game
             SetRequiredStats();
             _gameAnimator.SetTrigger("ToIdle");
         }
-
+        
         public void AcceptMan()
         {
             _gameAnimator.SetTrigger("OutMan");
             StartCoroutine(SendNextMan());
-            CompareCurrentStatsWithStatsList();
         }
         
         public void RejectMan()
         {
             _gameAnimator.SetTrigger("OutMan");
-            StartCoroutine(SendNextMan());
+            StartCoroutine(SendNextManReject());
         }
         
         public void BackButtonState()
@@ -117,19 +126,32 @@ namespace Game
             }
             else
             {
-                GameInstance.UINavigation.OnGameWindowClosed?.Invoke();
-                StartCoroutine(GameInstance.UINavigation.OpenMenuPopup(0));
+                GameInstance.UINavigation.OpenPausePopup();
             }
         }
 
         private IEnumerator SendNextMan()
         {
             yield return new WaitForSeconds(1f);
-            SelectNextMan();
+            
+            CompareCurrentStatsWithStatsList();
+            if(_isGoodChoice)
+                SelectNextMan();
         }
 
+        private IEnumerator SendNextManReject()
+        {
+            yield return new WaitForSeconds(1f);
+            SelectNextMan();
+        }
+        
         private void SetRequiredStats()
         {
+            _moneyReceivedText.text = _moneyReceived.ToString();
+            _playersReceivedText.text = _playersReceived.ToString();
+            _moneyReceived = 0;
+            _playersReceived = 0;
+            
             for (var i = 0; i < _statsList.Count; i++)
             {
                 var statsList = _statsList[i];
@@ -170,33 +192,34 @@ namespace Game
             var tempCounter2 = 0;
             var tempCounter3 = 0;
             var tempCounter4 = 0;
-            for (int i = 0; i < _currentStats.Count; i++)
+            
+            for (int i = 0; i < _requiredStats1.Count; i++)
             {
-                if (_currentStats[i] >= _requiredStats1[i])
+                if (_currentStats[i+1] >= _requiredStats1[i])
                 {
                     tempCounter1++;
                 }
             }
             
-            for (int i = 0; i < _currentStats.Count; i++)
+            for (int i = 0; i < _requiredStats2.Count; i++)
             {
-                if (_currentStats[i] >= _requiredStats2[i])
+                if (_currentStats[i+1] >= _requiredStats2[i])
                 {
                     tempCounter2++;
                 }
             }
             
-            for (int i = 0; i < _currentStats.Count; i++)
+            for (int i = 0; i < _requiredStats3.Count; i++)
             {
-                if (_currentStats[i] >= _requiredStats3[i])
+                if (_currentStats[i+1] >= _requiredStats3[i])
                 {
                     tempCounter3++;
                 }
             }
             
-            for (int i = 0; i < _currentStats.Count; i++)
+            for (int i = 0; i < _requiredStats4.Count; i++)
             {
-                if (_currentStats[i] >= _requiredStats4[i])
+                if (_currentStats[i+1] >= _requiredStats4[i])
                 {
                     tempCounter4++;
                 }
@@ -207,17 +230,17 @@ namespace Game
                 tempCounter3 == 5 ||
                 tempCounter4 == 5)
             {
-                Debug.Log("БОЛЬШЕ");
+                _moneyReceived += 10;
+                _playersReceived += 1;
+                GameInstance.Timer.AddInGameSeconds(10);
+                GameInstance.MoneyManager.AddCoinsCurrency(10);
+                _isGoodChoice = true;
             }
             else
             {
-                Debug.Log("МЕНЬШЕ");
+                _isGoodChoice = false;
+                GameInstance.Timer.TimerEnd();
             }
-
-            Debug.Log($"{tempCounter1}");
-            Debug.Log($"{tempCounter2}");
-            Debug.Log($"{tempCounter3}");
-            Debug.Log($"{tempCounter4}");
         }
     }
 }
