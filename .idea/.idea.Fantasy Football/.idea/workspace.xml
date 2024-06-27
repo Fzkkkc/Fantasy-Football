@@ -18,13 +18,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MoneyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/UITextMoney.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/LoadingAnimation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/UINavigation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/FXController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/GameUpgrades.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/AdsInitializer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/MusicSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/AudioEmitter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/AudioSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioCueScriptableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Timer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/RewardedAdsButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/MoneyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/GameInstance.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Services/GameUpgrades.cs" />
       </list>
     </option>
   </component>
@@ -68,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1719415045945</updated>
       <workItem from="1719415048480" duration="2913000" />
-      <workItem from="1719474933744" duration="23854000" />
+      <workItem from="1719474933744" duration="26599000" />
     </task>
     <servers />
   </component>

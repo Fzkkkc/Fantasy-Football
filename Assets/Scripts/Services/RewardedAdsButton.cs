@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using GameCore;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Advertisements;
  
@@ -60,6 +61,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
         {
             Debug.Log("Unity Ads Rewarded Ad Completed");
             // Grant a reward.
+            GameInstance.MoneyManager.AddCoinsCurrency(200);
         }
     }
  

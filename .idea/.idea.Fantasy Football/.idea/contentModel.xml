@@ -86,12 +86,18 @@
             <e p="GameState.cs" t="Include" />
             <e p="Timer.cs" t="Include" />
           </e>
+          <e p="ScriptableObjects" t="Include">
+            <e p="AudioCueScriptableObject.cs" t="Include" />
+          </e>
           <e p="Services" t="Include">
             <e p="AdsInitializer.cs" t="Include" />
+            <e p="AudioEmitter.cs" t="Include" />
+            <e p="AudioSystem.cs" t="Include" />
             <e p="FXController.cs" t="Include" />
             <e p="GameInstance.cs" t="Include" />
             <e p="GameUpgrades.cs" t="Include" />
             <e p="MoneyManager.cs" t="Include" />
+            <e p="MusicSystem.cs" t="Include" />
             <e p="RewardedAdsButton.cs" t="Include" />
             <e p="Singleton.cs" t="Include" />
           </e>

@@ -12,6 +12,8 @@ namespace Game
         [SerializeField] private TextMeshProUGUI _timerText;
         [SerializeField] private TextMeshProUGUI _bonusText;
 
+        [SerializeField] private AudioCueScriptableObject _gameOverSound;
+        
         private float _timeRemaining;
         private bool isRunning = false;
         
@@ -61,6 +63,7 @@ namespace Game
         {
             OnTimerStopped?.Invoke();
             isRunning = false;
+            GameInstance.Audio.Play(_gameOverSound);
         }
 
         public void StopTimer()

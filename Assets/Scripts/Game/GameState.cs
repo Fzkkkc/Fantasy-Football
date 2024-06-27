@@ -27,6 +27,8 @@ namespace Game
         [SerializeField] private List<string> _manNames;
         [SerializeField] private List<string> _womanNames;
 
+        [SerializeField] private AudioCueScriptableObject _acceptAudio, _rejectAudio;
+        
         private bool _isExpandedStats = false;
 
         private List<int> _currentStats = new List<int> {1, 2, 3, 4, 5, 6};
@@ -83,7 +85,7 @@ namespace Game
             _passportStatsText[1].text = $"{_currentStats[1]} years";
             for (var i = 2; i < _currentStats.Count; i++)
             {
-                _currentStats[i] = Random.Range(80, 101);
+                _currentStats[i] = Random.Range(8, 101);
                 _passportStatsText[i].text = _currentStats[i].ToString();
             }
         }
@@ -110,6 +112,7 @@ namespace Game
             GameInstance.FXController.PlayHitParticle();
             _gameAnimator.SetTrigger("OutMan");
             StartCoroutine(SendNextMan());
+            GameInstance.Audio.Play(_acceptAudio);
         }
         
         public void RejectMan()
@@ -117,6 +120,7 @@ namespace Game
             GameInstance.FXController.PlayMissParticle();
             _gameAnimator.SetTrigger("OutMan");
             StartCoroutine(SendNextManReject());
+            GameInstance.Audio.Play(_rejectAudio);
         }
         
         public void BackButtonState()
