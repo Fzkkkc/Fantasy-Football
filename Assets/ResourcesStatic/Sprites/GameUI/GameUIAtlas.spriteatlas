@@ -47,6 +47,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: f3772d1104aa63a4b89ac84202f6192f, type: 3}
     - {fileID: 2800000, guid: adc57a11c1c0ead4d80c0af77898b3e6, type: 3}
     - {fileID: 2800000, guid: 5aa254ae07c19a947b61233eadd864cb, type: 3}
+    - {fileID: 2800000, guid: da4cf88e969c6cd408ab21777889f0aa, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -65,6 +66,7 @@ SpriteAtlas:
     - 432dbc59a3253ed46b2f811ab4e413f2: 21300000
     - 23a0175a44ca3864f8ecb77158ce6a92: 21300000
     - 5d1e477efb92da54484cc6c9dbbfedbd: 21300000
+    - da4cf88e969c6cd408ab21777889f0aa: 21300000
     - 5aa254ae07c19a947b61233eadd864cb: 21300000
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -82,6 +84,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 432dbc59a3253ed46b2f811ab4e413f2, type: 3}
   - {fileID: 21300000, guid: 23a0175a44ca3864f8ecb77158ce6a92, type: 3}
   - {fileID: 21300000, guid: 5d1e477efb92da54484cc6c9dbbfedbd, type: 3}
+  - {fileID: 21300000, guid: da4cf88e969c6cd408ab21777889f0aa, type: 3}
   - {fileID: 21300000, guid: 5aa254ae07c19a947b61233eadd864cb, type: 3}
   m_PackedSpriteNamesToIndex:
   - Frame 1597880652
@@ -98,6 +101,7 @@ SpriteAtlas:
   - "\u041C\u043E\u043D\u0438\u0442\u043E\u0440"
   - Group 2
   - Frame 1597880653
+  - icon
   - "\u0447\u0430\u0441\u044B"
   m_RenderDataMap: {}
   m_Tag: GameUIAtlas

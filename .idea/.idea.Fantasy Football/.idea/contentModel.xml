@@ -2,8 +2,45 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\UnityProjects\Fantasy Football" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="ExternalDependencyManager" t="Include">
+          <e p="Editor" t="Include">
+            <e p="external-dependency-manager_version-1.2.179_manifest.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Firebase" t="Include">
+          <e p="Editor" t="Include">
+            <e p="AppDependencies.xml" t="Include" />
+            <e p="FirebaseRemoteConfig_version-12.0.0_manifest.txt" t="Include" />
+            <e p="RemoteConfigDependencies.xml" t="Include" />
+          </e>
+          <e p="m2repository" t="Include">
+            <e p="com" t="Include">
+              <e p="google" t="Include">
+                <e p="Firebase" t="Include">
+                  <e p="firebase-app-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                  <e p="firebase-config-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="ProjectRequestHandlingTemplate" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="AppData.cs" t="Include" />
+            <e p="EntryPoint.cs" t="Include" />
+            <e p="FirebaseTemplate.cs" t="Include" />
+            <e p="OneZeroRequest.cs" t="Include" />
+            <e p="Web.cs" t="Include" />
+            <e p="YesNo.cs" t="Include" />
+          </e>
+        </e>
         <e p="ResourcesStatic" t="Include">
           <e p="TextMesh Pro" t="Include">
             <e p="Examples &amp; Extras" t="Include">
@@ -107,11 +144,62 @@
             <e p="UITextMoney.cs" t="Include" />
           </e>
         </e>
+        <e p="StreamingAssets" t="Include">
+          <e p="google-services-desktop.json" t="Include" />
+        </e>
+        <e p="UniWebView" t="Include">
+          <e p="Editor" t="Include">
+            <e p="AndroidManifest.cs" t="Include" />
+            <e p="BuildGradle.cs" t="Include" />
+            <e p="GradleProperty.cs" t="Include" />
+            <e p="UniWebView-CSharp.Editor.asmdef" t="Include" />
+            <e p="UniWebViewEditorSettings.cs" t="Include" />
+            <e p="UniWebViewPostBuildProcessor.cs" t="Include" />
+          </e>
+          <e p="Interface" t="Include">
+            <e p="UniWebViewAndroid.cs" t="Include" />
+            <e p="UniWebViewAndroidStaticListener.cs" t="Include" />
+            <e p="UniWebViewCocoa.cs" t="Include" />
+            <e p="UniWebViewPlaceholder.cs" t="Include" />
+          </e>
+          <e p="README.txt" t="Include" />
+          <e p="Script" t="Include">
+            <e p="UniWebView.cs" t="Include" />
+            <e p="UniWebViewAuthentication" t="Include">
+              <e p="UniWebViewAuthenticationCommonFlow.cs" t="Include" />
+              <e p="UniWebViewAuthenticationFlow.cs" t="Include" />
+              <e p="UniWebViewAuthenticationFlowCustomize.cs" t="Include" />
+              <e p="UniWebViewAuthenticationFlowDiscord.cs" t="Include" />
+              <e p="UniWebViewAuthenticationFlowFacebook.cs" t="Include" />
+              <e p="UniWebViewAuthenticationFlowGitHub.cs" t="Include" />
+              <e p="UniWebViewAuthenticationFlowGoogle.cs" t="Include" />
+              <e p="UniWebViewAuthenticationFlowLine.cs" t="Include" />
+              <e p="UniWebViewAuthenticationFlowTwitter.cs" t="Include" />
+              <e p="UniWebViewAuthenticationSession.cs" t="Include" />
+              <e p="UniWebViewAuthenticationStandardToken.cs" t="Include" />
+              <e p="UniWebViewAuthenticationUtils.cs" t="Include" />
+            </e>
+            <e p="UniWebViewContentInsetAdjustmentBehavior.cs" t="Include" />
+            <e p="UniWebViewDownloadMatchingType.cs" t="Include" />
+            <e p="UniWebViewEmbeddedToolbar.cs" t="Include" />
+            <e p="UniWebViewHelper.cs" t="Include" />
+            <e p="UniWebViewLogger.cs" t="Include" />
+            <e p="UniWebViewMessage.cs" t="Include" />
+            <e p="UniWebViewNativeListener.cs" t="Include" />
+            <e p="UniWebViewSafeBrowingComponent.cs" t="Include" />
+            <e p="UniWebViewSafeBrowsing.cs" t="Include" />
+            <e p="UniWebViewToolbarPosition.cs" t="Include" />
+            <e p="UniWebViewTransitionEdge.cs" t="Include" />
+          </e>
+          <e p="UniWebView-CSharp.asmdef" t="Include" />
+        </e>
       </e>
       <e p="Fantasy Football.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
+      <e p="UniWebView-CSharp.csproj" t="IncludeRecursive" />
+      <e p="UniWebView-CSharp.Editor.csproj" t="IncludeRecursive" />
     </e>
     <e p="C:\Users\37529\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\37529\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Fantasy Football.481659140.00" t="ExcludeRecursive" />
