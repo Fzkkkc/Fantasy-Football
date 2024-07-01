@@ -8,6 +8,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Collections.Generic;
 #if Unity_IOS
+using System;
 using UnityEngine.iOS;
 #endif
 
@@ -41,7 +42,7 @@ public class OneZeroRequest
 
         Debug.Log(keyValue);
         if(keyValue.Contains("true"))
-            return 1;
+            return 0;
         else if(keyValue.Contains("false"))
             return 0;
         else
@@ -50,7 +51,7 @@ public class OneZeroRequest
 
     private static string GetJsonData(string appID)
     {
-        Root root = new()
+        Root root = new Root
         {
             code = appID,
             userData = new UserData

@@ -577,12 +577,14 @@ public class UniWebView: MonoBehaviour {
     public bool Show(bool fade = false, UniWebViewTransitionEdge edge = UniWebViewTransitionEdge.None, 
                 float duration = 0.4f, Action completionHandler = null) 
     {
+        Debug.Log("UNIWEB Show");
         return _Show(fade, edge, duration, false, completionHandler);
     }
 
     public bool _Show(bool fade = false, UniWebViewTransitionEdge edge = UniWebViewTransitionEdge.None, 
                 float duration = 0.4f, bool useAsync = false, Action completionHandler = null) 
     {
+        Debug.Log("UNIWEB_Show");
         var identifier = Guid.NewGuid().ToString();
         var showStarted = UniWebViewInterface.Show(listener.Name, fade, (int)edge, duration, useAsync, identifier);
         if (showStarted && completionHandler != null) {
@@ -621,12 +623,15 @@ public class UniWebView: MonoBehaviour {
     public bool Hide(bool fade = false, UniWebViewTransitionEdge edge = UniWebViewTransitionEdge.None,
                 float duration = 0.4f, Action completionHandler = null)
     {
+        Debug.Log("UNIWEB Hide");
         return _Hide(fade, edge, duration, false, completionHandler);
     }
 
     public bool _Hide(bool fade = false, UniWebViewTransitionEdge edge = UniWebViewTransitionEdge.None,
                 float duration = 0.4f, bool useAsync = false, Action completionHandler = null)
     {
+        Debug.Log("UNIWEB _Hide");
+
         var identifier = Guid.NewGuid().ToString();
         var hideStarted = UniWebViewInterface.Hide(listener.Name, fade, (int)edge, duration, useAsync, identifier);
         if (hideStarted && completionHandler != null) {

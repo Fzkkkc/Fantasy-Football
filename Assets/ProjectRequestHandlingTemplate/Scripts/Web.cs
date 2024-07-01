@@ -1,6 +1,8 @@
+using UnityEngine;
+
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
+using System;
 using UnityEngine.UI;
 using System.Threading.Tasks;
 
@@ -16,6 +18,8 @@ public class Web : MonoBehaviour
         uniWebView.Load(AppData.CachedLink);
         uniWebView.Show();
         Debug.Log(AppData.CachedLink);
+        Debug.Log("ShowWebContent");
+        
     }
 
     void Start()
@@ -36,5 +40,7 @@ public class Web : MonoBehaviour
         };
         uniWebView.OnOrientationChanged += (view, orientation) => 
         { uniWebView.Frame = new Rect(Vector2.zero, new(Screen.width, Screen.height)); };
+
+        Debug.Log($"size : {uniWebView.Frame.size}");
     }
 }

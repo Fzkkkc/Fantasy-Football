@@ -21,7 +21,7 @@ namespace GameCore
 
         protected override void Awake()
         { 
-            //PlayerPrefs.DeleteAll();
+            PlayerPrefs.DeleteAll();
             base.Awake();
             _moneyManager.Init(0);
             _uiNavigation.Init();
